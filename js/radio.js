@@ -82,7 +82,7 @@ class MetingJSElement extends HTMLElement {
             audio: data,
             mutex: true,
             lrcType: this.meta.lrcType || 3,
-            storageName: 'metingjs'
+            storageName: 'metingjsradio'
         }
 
         if (!data.length)
