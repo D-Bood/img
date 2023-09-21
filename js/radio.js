@@ -38,7 +38,7 @@ class MetingJSElement extends HTMLElement {
         }
         this.config = config
 
-            this.pllstapi = 'https://netease.project.ac.cn/dj/:type?rid=:id&r=:r' # 'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r'
+            this.pllstapi = 'https://netease.project.ac.cn/dj/:type?rid=:id&r=:r'
             this.songapi = 'https://netease.project.ac.cn/song/url?id=:rid&r=:r'
     }
 
