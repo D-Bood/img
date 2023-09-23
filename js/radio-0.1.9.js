@@ -61,7 +61,7 @@ class MetingRadioJSElement extends HTMLElement {
                             djplaylist.push(count)
        })
 	   }
-		setTimeout(() => {window.alert(djplaylist)
+		setTimeout(() => {// window.alert(djplaylist)
 	   this._loadPlayer(djplaylist)}, 3000)
    })
             }
