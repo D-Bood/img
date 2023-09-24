@@ -47,7 +47,7 @@ class MetingRadioJSElement extends HTMLElement {
 	                for (var i = 0; i <= pllstdata.programs.length - 1; i++) {
                     let count = {}
                     count.author = pllstdata.programs[i].dj.nickname
-                        count.lrc = '[00:00.00]' + pllstdata.programs[i].radio.desc　+ pllstdata.programs[i].description.replace(/\\\\n/g, '\n')
+                        count.lrc = '[00:00.00]' + pllstdata.programs[i].description
                         count.pic = pllstdata.programs[i].coverUrl
                         count.title = pllstdata.programs[i].name
                         this.rid = pllstdata.programs[i].mainTrackId
@@ -57,7 +57,7 @@ class MetingRadioJSElement extends HTMLElement {
                         fetch(songurl)
                         .then((response1) => response1.json())
                         .then((data1) => {
-                            count.url = data1.data[0].url
+                            count.url = data1.data[0].url.replace(/http/, 'https')
                             djplaylist.push(count)
        })
 	   }
